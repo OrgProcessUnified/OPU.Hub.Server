@@ -1,0 +1,43 @@
+﻿@model OPU.Hub.Server.WebUI.Models.CCA.InitiatePayment
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>InitiatePayment</title>
+    @*<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>*@
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript">
+           $(document).ready(function () {
+               $("#nonseamless").submit();
+           });
+    </script>
+</head>
+<body>
+    <form id="nonseamless" method="post" name="redirect" action="https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction">
+        <input type="hidden" id="encRequest" name="encRequest" value="@Model.StrEncRequest" />
+        <input type="hidden" name="access_code" id="access_code" value="@Model.StrAccessCode" />
+
+        @*<div>
+                OrderId : @Model.PaymentInitiationInfo.OrderId
+                <br />
+                Amount : @Model.PaymentInitiationInfo.Amount
+                <br />
+                BillingName : @Model.PaymentInitiationInfo.BillingName
+                <br />
+                BillingAddress : @Model.PaymentInitiationInfo.BillingAddress
+                <br />
+                BillingCity : @Model.PaymentInitiationInfo.BillingCity
+                <br />
+                BillingState : @Model.PaymentInitiationInfo.BillingState
+                <br />
+                BillingCountry : @Model.PaymentInitiationInfo.BillingCountry
+                <br />
+                BillingZip : @Model.PaymentInitiationInfo.BillingZip
+            </div>*@
+    </form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="OPU.Hub.Server.WebUI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CCAvenueWorkingKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">XdnCZhUEkPKMwstqDPjQWbM0hkjb5DmQxMdkNTJXRxc=</Value>
+    </Setting>
+    <Setting Name="CCAvenueAccessCode" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1j2wO73xHIizB3mp2YnHRS3n28/xGDSHjYACZuR+e6g=</Value>
+    </Setting>
+    <Setting Name="CCAvenueMerchantId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">166896</Value>
+    </Setting>
+    <Setting Name="CCAvenueCurrency" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INR</Value>
+    </Setting>
+    <Setting Name="CCAvenueRedirectUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://opu.smartbitit.com/opuwebui/CCA/CCAResponse</Value>
+    </Setting>
+    <Setting Name="CCAvenueLanguage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">en</Value>
+    </Setting>
+    <Setting Name="CCAvenueCancelUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://opu.smartbitit.com/opuwebui/CCA/PaymentCancelled</Value>
+    </Setting>
+    <Setting Name="AdminUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">satya.jena@smartbitit.com</Value>
+    </Setting>
+    <Setting Name="OPUConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">lb2rfmQ2+mnUJmMvNcWOEQ6172ESD5BN7IAmjVacKIn51J4rPMmp/TvSbshTe6tZkrtotexVjOCQ2piyIIAzFUybaqxb3PJMfsIjF08+72EUv6cWNR5lsUzlscIrYgz8</Value>
+    </Setting>
+    <Setting Name="OPUConnectionString2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">adkls32659hp0dfjkasddf9084r90fe049xcvzxciosdlf0093458730345023894+72</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

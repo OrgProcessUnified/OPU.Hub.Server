@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using System.Web.Optimization;
+using System.Web.Routing;
+
+namespace BNet.Hub.Server.WebUI
+{
+    public class MvcApplication : System.Web.HttpApplication
+    {
+        protected void Application_Start()
+        {
+            AreaRegistration.RegisterAllAreas();
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
+            #region Set Generic Configuration
+            AppGenericConfiguration.BNetConnectionString = Properties.Settings.Default.BNetConnectionString;
+            AppGenericConfiguration.BNetConnectionString2 = Properties.Settings.Default.BNetConnectionString2;
+            #endregion Set Generic Configuration
+        }
+    }
+}

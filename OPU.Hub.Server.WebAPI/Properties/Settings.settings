@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="OPU.Hub.Server.WebAPI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AdminUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">satya.jena@smartbitit.com</Value>
+    </Setting>
+    <Setting Name="AdminPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">4O9uPSW+3HFFB7YquwKR/w==</Value>
+    </Setting>
+    <Setting Name="AdminPassword2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">48ba69b975apa748e0bce2e64deed726519123e4c98909117046</Value>
+    </Setting>
+    <Setting Name="OPUConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">lb2rfmQ2+mnUJmMvNcWOEQ6172ESD5BN7IAmjVacKIkBGQx+JZS44ekWuYV5IPII15jkEfprjDvaNvnX8nDAfjPvcd0q8ct6m6ufQsOZgb2C/IDnEAbSaU5+Ac5EciyvnyBkqrd/Ea+tW6+4ye1LYDBj8nlczWAw0SW1FJPKuwg=</Value>
+    </Setting>
+    <Setting Name="OPUConnectionString2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">adkls32659hp0dfjkasddf9084r90fe049xcvzxciosdlf0093458730345023894+72</Value>
+    </Setting>
+    <Setting Name="PaymentURI" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://orderpoint.smartbitit.com/opuwebui/cca/initiatepayment</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -126,6 +126,42 @@
             })
         }
 
+        function populateUserFilterByRole(data, filterKey, detailFieldNo, roleLookupNo, ){
+	        var roleLookupField = `L${roleLookupNo}`;
+	        var observations =  jQuery.grep(data.DynamicReport.Details, function( d, i ) {
+		        return (( d.DetailFieldNo == detailFieldNo) && (d.LocalId == data.DynamicReport.CurrentDetailLocalId));
+	        });
+
+	        data.Filters[filterKey] = [];
+	        if (observations.length > 0){
+		        var observation = observations[0];
+		
+		        var roleLookupId = observation[roleLookupField];
+		
+		        if(roleLookupId > 0){
+			        var roleLookups = jQuery.grep(data.Lookups, function( l, i ) {
+					        return ( l.LookupId == roleLookupId);
+				        });
+				
+			        if (roleLookups.length > 0){
+				        var roleId = parseInt(roleLookups[0].LookupKey);
+				
+				        if (roleId > 0){
+					        var roles = jQuery.grep(data.AllRoles, function( r, i ) {
+							        return ( r.RoleId == roleId);
+						        });
+						
+					        if (roles.length > 0){
+						        data.Filters[filterKey] = roles[0].Users;
+					        }					
+				        }
+			        }
+		        }
+	        }
+        }
+    </script>
+
+    <script type="text/javascript">
         function testGroupBy() {
             let arr = [{ "shape": "square", "color": "red", "instances": 1 },
                 { "shape": "square", "color": "red", "instances": 1 },
@@ -140,8 +176,9 @@
 
             alert(JSON.stringify(result));
         }
-
     </script>
+
+
 </head>
 <body>
     <button id="test_Button">Welcome to Order Point!</button>

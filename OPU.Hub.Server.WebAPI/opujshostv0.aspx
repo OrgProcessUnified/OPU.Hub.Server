@@ -159,6 +159,23 @@
 		        }
 	        }
         }
+
+        function getCurrentDetail(detailFieldNo){
+	        var currentDetails =  jQuery.grep(data.DynamicReport.Details, function( d, i ) {
+			        return (( d.DetailFieldNo == detailFieldNo) && (d.LocalId == data.DynamicReport.CurrentDetailLocalId));
+		        });
+
+	        return (currentDetails.length > 0) ?  currentDetails[0] : null;
+        }
+
+        function durationInMinutes(date1, date2, ignoreDate, allowNegative){
+	        if (ignoreDate){
+		         var duration = ((date2.getHours() * 60) + (date2.getMinutes())) - ((date1.getHours() * 60) + (date1.getMinutes()));
+		         return allowNegative ? duration : (duration > 0 ? duration : 0);
+	        }else{
+		        return parseInt((date2 - date1) / 1000 / 60);
+	        }
+        }
     </script>
 
     <script type="text/javascript">

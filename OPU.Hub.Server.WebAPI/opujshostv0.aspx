@@ -160,7 +160,7 @@
 	        }
         }
 
-        function getCurrentDetail(detailFieldNo){
+        function getCurrentDetail(data, detailFieldNo){
 	        var currentDetails =  jQuery.grep(data.DynamicReport.Details, function( d, i ) {
 			        return (( d.DetailFieldNo == detailFieldNo) && (d.LocalId == data.DynamicReport.CurrentDetailLocalId));
 		        });
